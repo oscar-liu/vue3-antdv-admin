@@ -38,3 +38,6 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### 界面预览
+![界面预览](https://img-blog.csdnimg.cn/direct/f0cddf302e3e4721970407154ca75fe4.png#pic_center)
