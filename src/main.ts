@@ -10,6 +10,8 @@ import "./assets/css/layout.less";
 
 import './permission'
 
+import './utils/litchi'
+
 const app = createApp(App)
 
 //导入组件库
