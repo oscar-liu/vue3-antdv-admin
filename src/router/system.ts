@@ -16,7 +16,7 @@ const routers = [
     },
     children: [
       {
-        path: '/dashhoard',
+        path: '',
         name: 'dashhoard-workbench',
         meta: {
           title: '工作台',
@@ -24,79 +24,79 @@ const routers = [
         },
         component: () => import('@/views/dashboard/index.vue')
       },
-      // {
-      //   path: 'system',
-      //   meta: {
-      //     title: '系统管理'
-      //   },
-      //   // component: Layout,
-      //   redirect: 'system/user',
-      //   children: [
-      //     {
-      //       path: 'user',
-      //       name: 'system-user',
-      //       meta: {
-      //         title: '用户管理'
-      //       },
-      //       component: () => import('@/views/admin/system/user.vue')
-      //     },
-      //     {
-      //       path: 'role',
-      //       name: 'role-manage',
-      //       meta: {
-      //         title: '角色管理'
-      //       },
-      //       component: () => import('@/views/admin/system/role.vue')
-      //     },
-      //     {
-      //       path: 'menu',
-      //       name: 'menu-manage',
-      //       meta: {
-      //         title: '菜单管理'
-      //       },
-      //       component: () => import('@/views/admin/system/menu.vue')
-      //     },
-      //     {
-      //       path: 'dep',
-      //       name: 'dep-manage',
-      //       meta: {
-      //         title: '部门管理'
-      //       },
-      //       component: () => import('@/views/admin/system/dep.vue')
-      //     },
-      //     {
-      //       path: 'param',
-      //       name: 'param-manage',
-      //       meta: {
-      //         title: '参数管理'
-      //       },
-      //       component: () => import('@/views/admin/system/param.vue')
-      //     },
-      //     {
-      //       path: 'log/operation',
-      //       name: 'log-operation',
-      //       meta: {
-      //         title: '操作日志'
-      //       },
-      //       component: () => import('@/views/admin/system/log/operation.vue')
-      //     },
-      //     {
-      //       path: 'log/error',
-      //       name: 'log-error',
-      //       meta: {
-      //         title: '错误日志'
-      //       },
-      //       component: () => import('@/views/admin/system/log/error.vue')
-      //     },
-      //   ]
-      // },
-      // {
-      //   path: 'schedule',
-      //   meta: {
-      //     title: '定时任务'
-      //   },
-      //   component: import('@/views/admin/schedule/manage.vue'),
-      // },
+      {
+        path: 'system',
+        meta: {
+          title: '系统管理'
+        },
+        // component: Layout,
+        redirect: 'system/user',
+        children: [
+          {
+            path: 'user',
+            name: 'system-user',
+            meta: {
+              title: '用户管理'
+            },
+            component: () => import('@/views/system/user.vue')
+          },
+          {
+            path: 'role',
+            name: 'role-manage',
+            meta: {
+              title: '角色管理'
+            },
+            component: () => import('@/views/system/role.vue')
+          },
+          {
+            path: 'menu',
+            name: 'menu-manage',
+            meta: {
+              title: '菜单管理'
+            },
+            component: () => import('@/views/system/menu.vue')
+          },
+          {
+            path: 'dep',
+            name: 'dep-manage',
+            meta: {
+              title: '部门管理'
+            },
+            component: () => import('@/views/system/dep.vue')
+          },
+          {
+            path: 'param',
+            name: 'param-manage',
+            meta: {
+              title: '参数管理'
+            },
+            component: () => import('@/views/system/param.vue')
+          },
+          {
+            path: 'log/operation',
+            name: 'log-operation',
+            meta: {
+              title: '操作日志'
+            },
+            component: () => import('@/views/system/log/operation.vue')
+          },
+          {
+            path: 'log/error',
+            name: 'log-error',
+            meta: {
+              title: '错误日志'
+            },
+            component: () => import('@/views/system/log/error.vue')
+          },
+        ]
+      },
+      {
+        path: 'schedule',
+        meta: {
+          title: '定时任务'
+        },
+        component: import('@/views/system/schedule/manage.vue'),
+      },
     ]
   },
 ]

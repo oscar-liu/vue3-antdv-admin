@@ -3,16 +3,16 @@
     <a-layout-header class="header">
       <div class="header-wrap">
         <div class="nav">
-          <div class="logo" />
-            <a-menu
-              v-model:selectedKeys="selectedKeys"
-              theme="dark"
-              mode="horizontal"
-              :style="{ lineHeight: '64px' }"
+          <div class="logo"></div>
+          <a-menu
+            v-model:selectedKeys="selectedKeys"
+            theme="dark"
+            mode="horizontal"
+            :style="{ lineHeight: '64px' }"
             >
-              <a-menu-item key="1">Home</a-menu-item>
-              <a-menu-item key="2">Cms</a-menu-item>
-              <a-menu-item key="3">System</a-menu-item>
+              <a-menu-item key="1">Dashboard</a-menu-item>
+              <a-menu-item key="2">System</a-menu-item>
+              <a-menu-item key="3">CRM</a-menu-item>
             </a-menu>
         </div>
         <div class="info">
@@ -177,5 +177,6 @@ const handleClick: MenuProps['onClick'] = e => {
       color: #000;
     }
   }
+
 
 </style>
